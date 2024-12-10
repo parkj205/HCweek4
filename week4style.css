@@ -1,0 +1,404 @@
+body{
+  background-color: rgb(255, 255, 255);
+text-align: center;
+height: 3500px;
+}
+
+.background {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 1300px; 
+  margin-left: 40px;
+  height: 3800;
+  background: linear-gradient(to bottom, rgb(228, 255, 0), rgb(21, 0, 255));
+  z-index: -1000;
+}
+
+.background2 {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(228, 255, 0), rgb(21, 0, 255));
+  z-index: -9999;
+}
+
+#week4title {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  animation: movee 2s infinite; 
+  transition: 0.5s ease;
+  color: blue;
+}
+
+@keyframes movee {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: scale(1.5); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+
+.stickman{
+  margin-left: 39%;
+}
+
+.man{
+  position: absolute;
+  animation: rotate1 2s infinite;
+}
+
+.manpants{
+  position: absolute;
+  animation: wiggleopp 2s infinite;
+}
+
+.manshirt{
+  position: absolute;
+  animation: wiggle 2s infinite;
+}
+
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(250px); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+@keyframes wiggleopp {
+  0% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(-250px); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: rotate(-.5rad); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+
+.catshirt{
+  position:absolute;
+  width: 350px;
+  height:350px;
+  margin-top: 700px;
+  margin-left: 100px;
+  background-color: blue;
+  animation: blueyellow 2s infinite; 
+}
+.catshirt img{
+  margin-top: 4.5%;
+  transition: 0.2s ease;
+}
+
+
+.catshirt img:hover{
+  scale: 1.08;
+  cursor: pointer;
+}
+
+.photo1{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  margin-top: 1200px;
+  margin-left: 280px;
+}
+
+.photo1 img{
+  margin-top: 10%;
+}
+
+.photo2{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  margin-top: 1200px;
+  margin-left: 700px;
+}
+
+.photo2 img{
+  margin-top: 10%;
+}
+
+
+.photo3{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  margin-top: 1200px;
+  margin-left: 280px;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.photo3 img{
+  margin-top: 10%;
+}
+
+.photo3:hover{
+  opacity: 100;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.photo4{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  margin-top: 1200px;
+  margin-left: 700px;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+.photo4 img{
+  margin-top: 10%;
+}
+
+.photo4:hover{
+  opacity: 100;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.bigtextwhole{
+  margin-top: 1400px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(228, 255, 0);
+  font-weight: bolder;
+  font-size: 100px;
+  position: absolute;
+}
+
+.back{
+  margin-top: -248px;
+margin-left: 900px;
+}
+
+.boxes{
+margin-top: 400px;
+}
+
+.box1{
+  margin-top: 1700px;
+  position: absolute;
+  margin-left: 200px;
+  width: 300px;
+  height: 700px;
+  background-color: rgb(228, 255, 0);
+}
+
+.box2{
+  margin-top: 2000px;
+  position: absolute;
+  margin-left: 550px;
+  width: 300px;
+  height: 700px;
+  background-color: rgb(228, 255, 0);
+}
+
+.box3{
+  margin-top: 2300px;
+  position: absolute;
+  margin-left: 900px;
+  width: 300px;
+  height: 700px;
+  background-color: rgb(228, 255, 0);
+}
+
+.camo {
+  width: 250px;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+
+.camo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.camo img:hover{
+  scale: 1.08;
+  cursor: pointer;
+}
+
+.nike {
+  width: 250px;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+
+.nike img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.nike img:hover{
+  scale: 1.08;
+  cursor: pointer;
+}
+
+.cat {
+  width: 250px;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+
+.cat img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.cat img:hover{
+    scale: 1.08;
+    cursor: pointer;
+  }
+
+.abc{
+  margin-top: 1450px;
+  position: absolute;
+  margin-left: 700px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(228, 255, 0);
+  animation: blueyellow 2s infinite; 
+}
+
+.abc2{
+  margin-top: 1450px;
+  position: absolute;
+  margin-left: 700px;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+}
+
+.abc2:hover{
+  opacity: 100;
+  cursor: pointer;
+}
+
+@keyframes blueyellow {
+  0% {
+    background-color: rgb(228, 255, 0); 
+  }
+  50% {
+    background-color: blue; 
+  }
+  100% {
+    background-color: rgb(228, 255, 0); 
+  }
+}
+
+.text4{
+  margin-top: 900px;
+  margin-left: 500px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color: blue;
+}
+
+.week4again{
+  margin-top: -400px;
+}
+
+.text45{
+  margin-top: 860px;
+  margin-left: 200px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color: blue;
+}
+
+.text46{
+  margin-top: -300px;
+  position: absolute;
+  margin-left: 900px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color: blue;
+}
+
+.text6{
+  margin-top: 580px;
+  position: absolute;
+  margin-left: 900px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color:  rgb(228, 255, 0);
+}
+.text7{
+  margin-top: 280px;
+  position: absolute;
+  margin-left: 550px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color:  rgb(228, 255, 0);
+}
+
+.text8{
+  margin-top: -20px;
+  position: absolute;
+  margin-left: 200px;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: 0.5s ease;
+  color:  rgb(228, 255, 0);
+}
